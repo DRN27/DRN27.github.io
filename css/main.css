@@ -1,0 +1,245 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 1;
+}
+
+/* HEADER */
+
+header{
+	color: #fff;
+	background: url('../images/header-bg.png') top center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+.arrows-slider{
+	font-size: 42px;
+	height: 100vh;
+	width: 90%;
+	left: 50%;
+	margin-left: -45%;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.arrows-slider a:hover{
+	color: #c7b299;
+}
+.container{
+	position: absolute;
+	width: 80%;
+	left: 50%;
+	margin-left: -40%;
+	height: 100%;
+	padding: 0 25px;
+	padding-top: 35px;
+}
+header a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/* HEADER-BLOCK */
+
+.header-block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-block-logo{
+	font-size: 34px;
+	background: url('../images/header-logo.png') no-repeat left center;
+	padding: 15px 0 15px 65px;
+}
+.header-block-nav{
+	
+}
+.header-block-nav ul{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	display: flex;
+}
+.header-block-nav ul li{
+	margin-left: 30px;
+}
+.header-block-nav ul li:nth-child(9){
+	margin-left: 60px;
+}
+.header-block-nav ul li a:hover{
+	color: #c7b299;
+}
+/* HEADER-CONTENT-BLOCK */
+
+.header-content-block{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1px 1fr 30px;
+	margin-top: -65px;
+	height: 100%;
+}
+.header-content{
+	text-align: center;
+	margin-top: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.header-pretitle{
+	font-size: 36px;
+	font-weight: 500;
+}
+.header-title{
+	font-size: 52px;
+	font-weight: 800;
+	margin-top: 10px;
+}
+.header-text{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	margin-top: 25px;
+}
+.header-button{
+	font-size: 14px;
+	font-weight: 800;
+	background: #998675;
+	border-bottom: 3px solid #736357;
+	border-radius: 5px;
+	padding: 20px 35px 17px;
+	margin-top: 50px;
+}
+.header-button:hover{
+	background: #c7b299;
+}
+.header-slides{
+	width: 70px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.header-slides-item{
+	height: 7px;
+	width: 7px;
+	border-radius: 50%;
+	background-color: #939395;
+}
+
+/* MAIN */ 
+/* services */
+.services{
+	text-align: center;
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	padding: 80px 25px 0;
+}
+.services-item:hover .servicse-item-img{
+	color: #c7b299;
+}
+.services-item:hover .servicse-item-title{
+	color: #c7b299;
+}
+.services-item:hover .servicse-item-line{
+	background-color: #c7b299;
+}
+.servicse-item-img{
+	font-size: 30px;
+}
+.servicse-item-title{
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 25px;
+}
+.servicse-item-text{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	width: 90%;
+	margin: 25px auto 0;
+}
+.servicse-item-line{
+	height: 3px;
+	width: 70px;
+	margin: 25px auto 10px;
+	background-color: #f1eee9;
+}
+
+/* WAXOM */
+.waxom{
+	text-align: center;
+	margin: 150px auto 0;
+	width: 80%;
+}
+.waxom-title{
+	font-size: 30px;
+	font-weight: 600;
+}
+.waxom-text{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	margin-top: 25px;
+}
+.waxom-img{
+	margin-top: 40px;
+}
+.waxom-img img{
+	width: 100%;
+}
+
+/* WORDPRESS */
+
+.wordpress{
+	height: 150px;
+	background: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+	margin-top: -3px;
+	display: flex;
+	align-items: center;
+}
+.wordpress-container{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 25px;
+	display: grid;
+	grid-column-gap: 30px;
+	grid-template-columns: 10fr 2fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"title button"
+		"text button"
+}
+.wordpress-title{
+	font-size: 28px;
+	color: #fff;
+	grid-area: title;
+}
+.wordpress-title span{
+	color: #c7b299;
+}
+.wordpress-text{
+	font-size: 18px;
+	font-weight: 300;
+	color: #615855;
+	margin-top: 10px;
+	grid-area: text;
+}
+.wordpress-button{
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 53px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background: #998675;
+	border-bottom: 3px solid #736357;
+	border-radius: 5px;
+	grid-area: button;
+}
