@@ -2,12 +2,28 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+ 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+  .container{
+    width: 970px;
+    border: 1px solid red;
+  }
+  .header-content-block{
+    grid-template-columns: auto 970px auto;
+    border: 1px solid red;
+  }
+  .header-nav{
+    margin-left: -496px;
+  }
+  .header-nav nav ul li{
+    margin-left: 15px;
+  }
+  .header-content-block{
+    margin-left: -496px;
+  }
 }
 
 /* Small Devices, Tablets */
