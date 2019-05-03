@@ -25,6 +25,9 @@
   .header-nav nav ul li a{
     font-size: 12px;
   }
+  .servicse-item-title{
+    font-size: 18px;
+  }
   .our-projects{
     margin-top: 40px;
   }
@@ -171,6 +174,9 @@
   }
   .header-content-block{
     margin-top: -66px;
+  }
+  .header-text{
+    width: 80%;
   }
   .mbl-menu{
     display: block;
