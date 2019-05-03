@@ -4,7 +4,6 @@
 @media only screen and (max-width : 1200px) {
   .container{
     width: 970px;
-    border: 1px solid red;
   }
   .waxom img{
     width: 100%;
@@ -16,7 +15,6 @@
 @media only screen and (max-width : 992px) {
   .container{
     width: 750px;
-    border: 1px solid red;
   }
   .header-nav nav ul li{
     margin-left: 10px;
@@ -112,9 +110,6 @@
   .recent-post-block-slider{
     margin: 20px 0 40px 0;
   }
-  .recent-post-block-slider i:first-child{
-    margin-right: 40px;
-  }
   .partners{
     height: 400px;
   }
@@ -147,7 +142,236 @@
 @media only screen and (max-width : 768px) {
   .container{
     width: 100%;
-    border: 1px solid red;
+  }
+  .header-content-block{
+    grid-template-columns: auto;
+    grid-template-rows: 1px 1fr 30px;
+    grid-template-areas: "box" "main" "slider";
+  }
+  .arrows-slider{
+    display: none;
+  }
+  .header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 0;
+  }
+  
+  .header-nav nav ul{
+    padding-right: 50px;
+    flex-direction: column;
+    display: none;
+  }
+  .header-nav nav ul li{
+    margin-bottom: 10px;
+  }
+  .header-nav nav ul li:nth-child(9){
+    margin-left: 10px;
+  }
+  .header-content-block{
+    margin-top: -66px;
+  }
+  .mbl-menu{
+    display: block;
+		height: 36px;
+		width: 36px;
+		outline: none;
+		border: none;
+		background: none;
+		font-size: 32px;
+		color: #fff;
+  }
+  .mbl-menu:hover .header-nav nav ul{
+    display: block;
+  }
+  .services{
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .services-item{
+    width: 48%;
+    margin-top: 10px;
+  }
+  .servicse-item-text::before{
+    display: none;
+  }
+  .waxom{
+    margin-top: 30px;
+  }
+  .waxom-title{
+    font-size: 26px;
+  }
+  .waxom-text{
+    width: 85%;
+  }
+  .wordpress-title{
+    font-size: 20px;
+  }
+  .wordpress-content{
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-areas: 
+      ". title ."
+      ". text ." 
+      ". button ."
+  }
+  .wordpress-button{
+    margin-top: 10px;
+  }
+  .our-projects-text{
+    line-height: 22px;
+    margin-top: 10px; 
+    width: 90%;
+   }
+   .our-projects-links ul{
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+   }
+   .our-projects-links ul li{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+   }
+   .our-projects-items{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    grid-template-areas: 
+      "aa bb" 
+      "cc dd"
+      "ee ff"
+   }
+   .triangle{
+    margin: -24px 0 0 -10px;
+   }
+   .mobile{
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-template-areas: "content";
+  }
+   .mobile-img{
+    background: none;
+  }
+  .mobile-content-title{
+    text-align: center;
+  }
+  .mobile-content-text{
+    padding: 0 20px;
+  }
+  .counters{
+    height: 250px;
+  }
+  .counters-items{
+    text-align: center;
+    padding: 0 10px; 
+  }
+  .counters-item{
+    width: 20%;
+    height: 150px;
+  }
+  .counters-item-title{
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .counters-item-text{
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .counters-item-line{
+    display: none;
+  }
+  .recent-post-title{
+    margin-top: 20px;
+  }
+  .recent-post-text{
+    line-height: 22px;
+    margin-top: 10px;
+  }
+  .recent-post-block{
+    margin-top: 20px;
+    padding: 0 5px;
+  }
+  .recent-post-block-item{
+    width: 33%;
+  }
+  .recent-post-block-img{
+    min-height: 150px;
+  }
+  .recent-post-block-date{
+    top: 5px;
+    left: 5px;
+  }
+  .recent-post-block-title{
+    font-size: 14px;
+    padding: 10px 0 0 0 ;
+  }
+  .recent-post-block-text{
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px 0 0 0 ;
+  }
+  .recent-post-block-more{
+    font-size: 12px;
+    padding: 5px 0 20px 0 ;
+  }
+  .recent-post-block-slider{
+    margin: 10px 0 20px 0;
+  }
+  .partners{
+    height: 200px;
+  }
+  .partners img{
+    height: 65px;
+  }
+  .footer-content{
+    height: 600px;
+  }
+  .footer-content-block-container{
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  .footer-content-item{
+    width: 49%;
+    padding-top: 20px;
+  }
+  .footer-content-item-text-1{
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+  .footer-content-item-more-1{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .footer-content-item-post{
+    padding: 5px 0;
+  }
+  .footer-content-item-date-2{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .footer-content-item-text-2{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .footer-content-item-text-3{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer-content-item-date-3{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .footer-content-item-container-img{
+    grid-gap: 7px;
+    margin-top: 10px;
   }
 }
 
