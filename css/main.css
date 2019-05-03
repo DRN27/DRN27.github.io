@@ -15,7 +15,6 @@ body a{
 .container{
 	width: 1170px;
 	margin: 0 auto;
-	border: 1px solid red;
 }
 
 /* HEADER */
@@ -284,7 +283,7 @@ header{
  border-radius: 5px;
  padding:  10px 17px;
 }
-.our-projects-links ul li a:first-child{
+.our-projects-links ul li:first-child a{
  padding:  10px 35px;
 }
 .our-projects-items{
@@ -308,27 +307,27 @@ header{
  opacity: 0.7;
 }
 .our-projects-item-img{
- height: 220px;
- font-size: cover;	
+ height: 220px;	
+ background-size: cover;
  position: relative;
 }
 .img-1{
- background: url('../images/project1.png') top center no-repeat;
+ background: url('../images/project1.png') center center no-repeat;
 }
 .img-2{
- background: url('../images/project2.png') top center no-repeat;
+ background: url('../images/project2.png') center center no-repeat;
 }
 .img-3{
- background: url('../images/project3.png') top center no-repeat;
+ background: url('../images/project3.png') center center no-repeat;
 }
 .img-4{
- background: url('../images/project4.png') top center no-repeat;
+ background: url('../images/project4.png') center center no-repeat;
 }
 .img-5{
- background: url('../images/project5.png') top center no-repeat
+ background: url('../images/project5.png') center center no-repeat
 }
 .img-6{
- background: url('../images/project6.png') top center no-repeat;
+ background: url('../images/project6.png') center center no-repeat;
 }
 .our-projects-items{
  width: 100%;
@@ -519,7 +518,6 @@ header{
 }
 .counters-items{
 	text-align: center;
-	padding: 0 130px;
 	height: 100%;
 	margin: 0 auto;
 	padding: 0 190px;
