@@ -84,6 +84,7 @@ header{
 .header-text{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
+	line-height: 1.4;
 	width: 45%;
 	margin-top: 25px;
 }
@@ -99,7 +100,7 @@ header{
 .header-button:hover{
 	background: #c7b299;
 	border-bottom: none;
-	margin-top: 53px;
+	border-top: 3px solid transparent;
 }
 .header-slides{
 	width: 70px;
@@ -274,10 +275,14 @@ header{
 }
 .our-projects-links ul li {
  margin-right: 10px;
+ transition: all ease-in .2s;
 }
 .our-projects-links ul li:hover a{
  color: #fff;
  background: #998675;
+}
+.our-projects-links ul li:hover{
+	transform: translateY(-5px);
 }
 .our-projects-links ul li a{
  color: #8c8c8c;
@@ -298,15 +303,19 @@ header{
 .our-projects-item:hover .triangle{
  border-bottom-color:#362f2d;
 }
-.our-projects-item:hover .our-projects-item-img::before{
- content: "";
+.our-projects-item-img::before{
  display: block;
+ content: "";
  width: 100%;
  height: 100%;
  left: 0;
  top: 0;
  position: absolute;
  background-color: #000;
+ opacity: 0;
+ transition: all ease-in 1s;
+}
+.our-projects-item:hover .our-projects-item-img::before{
  opacity: 0.7;
 }
 .our-projects-item-img{
@@ -400,7 +409,7 @@ header{
 .our-projects-button:hover{
  background: #c7b299;
  border-bottom: none;
- margin-top: 43px;
+ border-top: 3px solid transparent;
 }
 .our-projects-item-links{
  position: absolute;
@@ -420,9 +429,11 @@ header{
  color: #fff;
  font-size: 30px;
  text-decoration: none;
+ transition: all ease-in 1s;
 }
 .our-projects-item-links a:hover{
  color: #c7b299;
+ transform: scale(2);
 }
 .our-projects-item-links a:last-child{
  padding-left: 30px;
@@ -653,7 +664,7 @@ header{
 .recent-post-block-slider i:hover{
 	color: #cab79f;
 }
-.recent-post-block-item:hover .recent-post-block-img::before{
+.recent-post-block-img::before{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -661,6 +672,10 @@ header{
 	height: 100%;
 	width: 100%;
 	background-color: #000;
+	opacity: 0;
+	transition: all linear .5s;
+}
+.recent-post-block-item:hover .recent-post-block-img::before{
 	opacity: 0.7;
 }
 .recent-post-block-item:hover .recent-post-block-content{
@@ -809,6 +824,7 @@ header{
 .footer-img{
 	background-size: cover;
 	height: 100px;
+	width: 100%;
 }
 
 /* END */

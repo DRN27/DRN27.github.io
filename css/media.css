@@ -25,6 +25,9 @@
   .header-nav nav ul li a{
     font-size: 12px;
   }
+  .header-text{
+    width: 75%;
+  }
   .servicse-item-title{
     font-size: 18px;
   }
@@ -160,18 +163,15 @@
     align-items: center;
     padding: 10px 20px 0;
   }
-  
-  .header-nav nav ul{
-    padding-right: 50px;
-    flex-direction: column;
+  nav{
     display: none;
   }
-  .header-nav nav ul li{
+  /* .header-nav nav ul li{
     margin-bottom: 10px;
   }
   .header-nav nav ul li:nth-child(9){
     margin-left: 10px;
-  }
+  } */
   .header-content-block{
     margin-top: -66px;
   }
@@ -188,7 +188,7 @@
 		font-size: 32px;
 		color: #fff;
   }
-  .mbl-menu:hover .header-nav nav ul{
+  .mbl-menu:focus nav{
     display: block;
   }
   .services{
