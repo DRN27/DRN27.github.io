@@ -246,6 +246,7 @@ header{
 }
 .wordpress-button:hover{
 	background: #c7b299;
+	padding-top: 3px;
 	border-bottom: none;
 }
 
@@ -463,6 +464,7 @@ header{
 .video-title{
 	font-size: 30px;
 	font-weight: 500;
+	text-align: center;
 	color: #fff;
 	margin-top: 40px;
 }
@@ -533,8 +535,7 @@ header{
 .counters-items{
 	text-align: center;
 	height: 100%;
-	margin: 0 auto;
-	padding: 0 190px;
+	padding: 0 5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center; 
@@ -785,9 +786,6 @@ header{
 .footer-content-item-post a{
 	text-decoration: none;
 	color: #00bff3;
-}
-.footer-content-item-post a.white{
-	color: #959595;
 }
 .footer-content-item-text-3{
 	font-size: 14px;
