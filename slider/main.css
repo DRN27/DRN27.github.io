@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    background: url(img/img1.jpg) center top no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.sliderArrow{
+    font-size: 60px;
+    color: #fff;
+}
+.sliderArrow:hover{
+    cursor: pointer;
+}
+.sliderLeft{
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0 1%;
+}
+.sliderRight{
+    position: absolute;
+    top: 50%;
+    left: 99%;
+    margin: -30px 0 0 -30px;
+}
+.currentSlid{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: -30px 0 0 -46px;
+    display: flex;
+}
+.currentSlidItem{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 8px;
+}
+.activeCurrentSlidItem{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: -2px 8px 0 0;
+}
