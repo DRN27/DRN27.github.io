@@ -5,13 +5,11 @@ $(document).ready(function() {
 			valid = false;
 			return valid;
 		}
-		alert('azaz');
 		$.ajax({
 			type: "POST",
-			url: "../mail.php",
+			url: "mail.php",
 			data: $(this).serialize()
 		}).done(function() {
-			alert('cool');
 			$(this).find('input').val('');
 			$(this).find('textarea').val('');
 			$('#form').trigger('reset');
