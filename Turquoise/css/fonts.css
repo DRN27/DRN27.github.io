@@ -1,0 +1,11 @@
+/* font-family: "MyriadPro"; */
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/ofont.ru_Myriad Pro Cond.ttf");
+}
+
+@font-face {
+  font-family: "MyriadPro Bold";
+  src: url("../fonts/8141.otf");
+}
+/*# sourceMappingURL=fonts.css.map */
