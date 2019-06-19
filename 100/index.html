@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Заголовок страницы</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<span>V 1</span>
+	<div class="help">Нужно набрать 100 очков в "Общий счёт" за наименьшее количество ходов. При нажати на "Бросить кубик" выпадает 
+		случайное число от 1 до 6. Если выпадает 1, то ход заканчивается, а "Текущий счёт" обнуляется. 
+		При нажатии на "Закончить ход" ваши текущие очки переходят в общий счёт.</div>
+	<div class="main">
+		<div class="scoreBlock">
+			<span id="score">Общий счёт: 0</span>
+			<span id="currentScore">Текущий счёт: 0</span>
+		</div>
+		<div class="throw" id="throw">Количествово ходов: 0</div>
+		<div class="result" id="result"></div>
+		<div class="button"><a href="#" onclick="game.rollDice();">Бросить кубик</a></div>
+		<div class="button"><a href="#" onclick="game.endTurn();">Завершить ход</a></div>
+	</div>
+	
+	<script src="js/main.js"></script>
+
+</body>
+</html>
